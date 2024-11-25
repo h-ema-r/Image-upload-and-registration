@@ -12,4 +12,5 @@ This is a simple PHP project that allows users to register with their details (u
 
 Here is a video showcasing how the website looks and works:
 
-[![Website Demo]https://github.com/h-ema-r/Image-upload-and-registration/blob/main/20241125-0927-38.2514438.mp4)]
+[![Website Demo](https://github.com/h-ema-r/Image-upload-and-registration/blob/main/20241125-0927-38.2514438.mp4)]
+
