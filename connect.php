@@ -1,15 +1,19 @@
 <?php
-$servername = "localhost";
+
 $username = "root";
 $password = "admin";
-$database = "imageuploadproject";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+$dsn="mysql:host=localhost;dbname=imageuploadproject";
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+
+try {
+  // Create connection
+$conn = new PDO($dsn, $username, $password);
+
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+  //echo "Connection successful!";
+
+} catch (PDOException $e) {
+  die("Connection failed: " . $e->getMessage());
 }
-
-?>
